@@ -608,24 +608,31 @@ button.primarysecondary {
   flex-basis: 50%;
   margin-top: 60px;
 }
+
 .portleft img {
   max-width: 100%;
 }
 
 .portsuccess {
   position: absolute;
-  margin-top: 168px;
+  top: 168px;
+  left: 0;
 }
 
 .portfcmb {
   position: absolute;
-  margin-top: 390px;
-  margin-left: 346px;
+  bottom: 40px;
+  right: 0px;
 }
 
-.portphone {
-  margin-left: 74px;
+.portfcmb img,
+.portsuccess img {
+  transform: scale(0.7);
 }
+
+/* .portphone {
+  margin-left: 74px;
+} */
 
 .portright {
   flex-basis: 50%;
@@ -818,26 +825,33 @@ footer a {
 .footmail {
   display: flex;
 }
+
 .footsearch {
   display: flex;
-  justify-content: space-between;
   background: transparent;
   border: 1px solid #eaeaea;
   border-radius: 8px;
-  padding: 10px 8px 10px 16px;
+  padding: 8px 8px 8px 16px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
 .footmail input {
   background: transparent;
   border: transparent;
   font-size: 16px;
   font-weight: 400;
-  line-height: 160%;
-  margin-block: 12px;
+  width: 100%;
+  color: white;
+  outline: none;
 }
-.footmail input {
-  min-width: max-content;
+
+.footmail input::placeholder {
+  color: white;
+}
+
+.footsearch button {
+  height: 34px;
 }
 
 .social p {
@@ -953,5 +967,8 @@ footer a {
   .footer_bottom {
     display: flex;
     justify-content: start;
+  }
+  .footcontainer {
+    padding-inline: 0px;
   }
 }
