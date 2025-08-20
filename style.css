@@ -856,6 +856,42 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: var(--base-clr);
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 140%;
+    color: var(--base-clr);
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 160%;
+    color: var(--base-clr);
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 160%;
+    font-style: italic;
+  }
+  p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 160%;
+    color: var(--base-clr-alt);
+  }
   .navbar {
     display: flex;
   }
